@@ -51,7 +51,7 @@
       "copyright": {
         "copyright": "Copyright",
         "all_rights_reserved": "All rights reserved.",
-        "license": "The software is licensed under the __MIT_link__ license.",
+        "license": "The software is licensed under the __MIT_link__ license. Please see __license_link__ for other software and associated licensing included in this product.",
         "attribution": "Please provide attribution to the Concord Consortium and the URL __concord_org_link__."
       },
       "md2d": {
@@ -227,6 +227,30 @@
           "labQuestCO2": "LabQuest CO₂ sensor",
           "labQuestO2": "LabQuest O₂ sensor"
         }
+      },
+      "codap": {
+        "dataContextName": "Runs",
+        "parentTable": {
+          "singleCase": "run",
+          "pluralCase": "runs",
+          "singleCaseWithArticle": "a run",
+          "setOfCases": "set",
+          "setOfCasesWithArticle": "a set"
+        },
+        "childTable": {
+          "singleCase": "measurement",
+          "pluralCase": "measurements",
+          "singleCaseWithArticle": "a measurement",
+          "setOfCases": "time series",
+          "setOfCasesWithArticle": "a time series"
+        },
+        "singleTable": {
+          "singleCase": "measurement",
+          "pluralCase": "measurements",
+          "singleCaseWithArticle": "a measurement",
+          "setOfCases": "set",
+          "setOfCasesWithArticle": "a set"
+        }
       }
     }
   },
@@ -265,8 +289,8 @@
         "title": "Πληροφορίες: __interactive_title__"
       },
       "share_dialog": {
-        "title": "Share: __interactive_title__",
-        "link": "link",
+        "title": "Κοινοποίηση: __interactive_title__",
+        "link": "συνδέσμου",
         "paste_email_im": "Επικόλληση αυτού του __link__ σε email ή μήνυμα.",
         "paste_html": "Επικόλληση HTML για ενσωμάτωση σε ιστότοπο ή ιστολόγιο.",
         "select_size": "Επιλογή μεγέθους:",
@@ -289,7 +313,7 @@
       "md2d": {
         "heatbath_icon_tooltip": "Λουτρό θερμότητας ενεργό",
         "ke_icon_tooltip": "Κλίση κινητικής ενέργειας",
-        "invalid_object_position_alert": "Δεν μπορείτε να ρίψετε το αντικείμενο εκεί.",
+        "invalid_object_position_alert": "Δεν μπορείτε να ρίξετε το αντικείμενο εκεί.",
         "aminoacid_menu": {
           "hydrophobic": "Υδρόφοβο",
           "hydrophilic": "Υδρόφιλο",
@@ -306,7 +330,7 @@
           "tyrosine": "Τυροσίνη",
           "asparagine": "Ασπαραγίνη",
           "glutamine": "Γλουταμίνη",
-          "serine": "Σερινη",
+          "serine": "Σερίνη",
           "threonine": "Θρεονίνη",
           "asparticacid": "Ασπαρτικό οξύ",
           "glutamicacid": "Γλουταμινικό οξύ",
@@ -316,8 +340,8 @@
         },
         "mutations_menu": {
           "substitution_mutation": "Μετάλλαξη αντικατάστασης",
-          "insertion_mutation": "Μετάλλαξη εισαγωγής",
-          "deletion_mutation": "Μετάλλαξη διαγραφής",
+          "insertion_mutation": "Μετάλλαξη προσθήκης",
+          "deletion_mutation": "Μετάλλαξη αφαίρεσης",
           "insert": "Εισαγωγή"
         }
       },
@@ -716,7 +740,11 @@
         "text_stop": "Zatrzymaj",
         "text_stop_tooltip": "Zatrzymaj symulację lub pobieranie danych",
         "text_reset": "Zresetuj",
-        "text_reset_tooltip": "Zresetuj symulację lub pobieranie danych"
+        "text_reset_tooltip": "Zresetuj symulację lub pobieranie danych",
+        "text_new_run": "Nowy pomiar",
+        "text_new_run_tooltip": "Rozpocznij nowy eksperyment",
+        "text_analyze_data": "Analizuj dane",
+        "text_analyze_data_tooltip": "Wyślij wyniki eksperymentu do CODAP"
       },
       "dialog": {
         "close_tooltip": "Zamknij"
@@ -743,7 +771,7 @@
       "copyright": {
         "copyright": "Copyright",
         "all_rights_reserved": "Wszystkie prawa zastrzeżone.",
-        "license": "To oprogramowanie jest rozpowszechniane na zasadach wolnej licencji __MIT_link__.",
+        "license": "To oprogramowanie jest rozpowszechniane na zasadach wolnej licencji __MIT_link__. Szczegóły licencji znajdują się w pliku __license_link__.",
         "attribution": "Proszę umieścić odniesienia do Concord Consortium oraz witryny __concord_org_link__."
       },
       "md2d": {
@@ -911,6 +939,30 @@
           "labQuestPH": "LabQuest czujnik pH",
           "labQuestCO2": "LabQuest czujnik CO₂",
           "labQuestO2": "LabQuest czujnik O₂"
+        }
+      },
+      "codap": {
+        "dataContextName": "Wyniki",
+        "parentTable": {
+          "singleCase": "eksperyment",
+          "pluralCase": "eksperymenty",
+          "singleCaseWithArticle": "eksperyment",
+          "setOfCases": "zbiór danych",
+          "setOfCasesWithArticle": "zbiór danych"
+        },
+        "childTable": {
+          "singleCase": "pomiar",
+          "pluralCase": "pomiary",
+          "singleCaseWithArticle": "pomiar",
+          "setOfCases": "szereg czasowy",
+          "setOfCasesWithArticle": "szereg czasowy"
+        },
+        "singleTable": {
+          "singleCase": "pomiar",
+          "pluralCase": "pomiary",
+          "singleCaseWithArticle": "pomiar",
+          "setOfCases": "zbiór danych",
+          "setOfCasesWithArticle": "zbiór danych"
         }
       }
     }
